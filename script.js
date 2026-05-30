@@ -13,12 +13,11 @@ menu.addEventListener("click", () => {
 /* BOOT ANIMATION */
 new Typed("#typed", {
   strings: [
-    // "Booting system...",
-    // "Loading kernel modules...",
+    "Booting system...",
+    "Welcome to cryx",
     // "Starting services...",
     // "Bypassing firewall...",
-    // "Access Granted 😈",
-    "Welcome SRM..."
+    "Access Granted...",
   ],
   typeSpeed: 50,
   backSpeed: 20,
@@ -30,7 +29,7 @@ new Typed("#typed", {
       boot.style.display = "none";
       terminal.classList.remove("hidden");
       input.focus();
-    }, 1200);
+    }, 2500);
   }
 });
 
@@ -43,15 +42,15 @@ hack
 social
 clear`,
 
-  about: "Cybersecurity enthusiast 🚀",
+  about: "CRYX is the Cyber Security Club of MNIT Jaipur, dedicated to fostering a culture of cybersecurity, ethical hacking, and research. Through workshops, CTFs, technical events and sessions, we help students to develop their skills.",
 
   whoami: "guest",
 
   hack: `Hacking system...
 ████████████ 100%
-Access Granted`,
+Access Denied...`,
 
-  social: `GitHub: https://github.com/yourname`
+  social: `GitHub: https://github.com/manish_jatav`
 };
 
 /* INPUT */
