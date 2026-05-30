@@ -2,6 +2,13 @@ const input = document.getElementById("commandInput");
 const output = document.getElementById("output");
 const terminal = document.getElementById("terminal");
 const boot = document.getElementById("boot");
+// for responsive navbar
+const menu = document.querySelector(".menu-icon");
+const links = document.querySelector(".links");
+
+menu.addEventListener("click", () => {
+    links.classList.toggle("active");
+});
 
 /* BOOT ANIMATION */
 new Typed("#typed", {

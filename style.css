@@ -44,30 +44,6 @@ body {
   font-family: monospace;
 }
 
-/* LOGO */
-.logo {
-  color: #00ff88;
-  font-weight: bold;
-}
-
-/* LINKS */
-.links {
-  display: flex;
-  gap: 20px;
-}
-
-.links a {
-  color: #aaa;
-  text-decoration: none;
-  transition: 0.2s;
-}
-
-.links a:hover {
-  color: #00ff88;
-  transform: scale(1.15);
-  text-shadow: 0 0 10px #00ff88;
-}
-
 /* LOGIN */
 .login {
   color: #aaa;
@@ -90,13 +66,95 @@ body {
   box-shadow: 0 0 10px #00ff88;
 }
 
+/* LINKS */
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links a {
+  color: #aaa;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.links a:hover {
+  color: #00ff88;
+  transform: scale(1.15);
+  text-shadow: 0 0 10px #00ff88;
+}
+
+
+.menu-icon{
+  display: none;
+  color: #00ff88;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width:768px){
+
+  .navbar{
+    width: 80%;
+    position: relative;
+  }
+
+  .login{
+    display: none;
+  }
+
+  .menu-icon{
+    display: block;
+  }
+
+  .links{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+
+    background: #0f1620;
+    border: 1px solid #1b6923;
+    border-radius: 10px;
+
+    display: none; /* hidden by default */
+
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 20px 0;
+  }
+
+  .links a{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* JS se class add hogi */
+  .links.active{
+    display: flex;
+  }
+}
+
+
+
+
+/* LOGO */
+.logo {
+  color: #00ff88;
+  font-weight: bold;
+}
+
+
 
 /* TERMINAL WINDOW */
 #terminal {
-  width: 80%;
+  width: min(90%, 1200px);
   margin: 40px auto;
+
   border: 1px solid #167725;
-  /* border-radius: 10px; */
   overflow: hidden;
   box-shadow: 0 0 25px rgba(0,255,136,0.15);
 }
